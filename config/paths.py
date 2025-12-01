@@ -1,0 +1,1 @@
+BALANCE_SHEET_PATH = '/Users/luiszg/Desktop/Documents/N26_Monthly_Data'
