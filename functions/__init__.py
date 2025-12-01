@@ -4,5 +4,6 @@ data processing functions, agent tools, and helper functions in here
 """
 
 from .data_processing import read_csvs_in_folder
+from .agent_tools import read_balance_sheet
 
 print("Functions module loaded...")

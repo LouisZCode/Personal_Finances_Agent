@@ -1,10 +1,12 @@
 
+from langchain_core.prompts import prompt
 from langgraph.graph.state import Checkpoint
 import yaml
 import os
 from langchain.agents import create_agent
 from dotenv import load_dotenv
 from langgraph.checkpoint.memory import InMemorySaver
+from functions import read_balance_sheet
 
 load_dotenv()
 
@@ -16,11 +18,13 @@ def load_prompts():
 
 prompts = load_prompts()
 test_prompt = prompts["test_prompt"]
+financial_agent_prompt = prompts["financial_agent_prompt"]
 
 
 
 financial_agent = create_agent(
-    system_prompt=test_prompt,
+    system_prompt=financial_agent_prompt,
     model="anthropic:claude-haiku-4-5",
-    checkpointer=InMemorySaver()
+    checkpointer=InMemorySaver(),
+    tools=[read_balance_sheet]
 )
