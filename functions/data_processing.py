@@ -7,7 +7,7 @@ from config import BALANCE_SHEET_PATH
 import glob
 import pandas as pd
 
-def read_csvs_in_folder(year : int):
+def read_csvs_in_folder(year : int) -> str:
 
     all_files = glob.glob(f"{BALANCE_SHEET_PATH}/{year}/*.csv")
 
@@ -16,5 +16,6 @@ def read_csvs_in_folder(year : int):
         df = pd.read_csv(file)
         df = df.to_markdown
         all_dataframes.append(df)
-    
-    print(all_dataframes)
+        
+    return all_dataframes
+
