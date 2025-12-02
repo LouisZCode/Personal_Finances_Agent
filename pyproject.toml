@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "gradio>=6.0.2",
     "langchain>=1.1.0",
     "langchain-anthropic>=1.2.0",
     "langgraph>=1.0.4",
