@@ -5,6 +5,11 @@ Thumbs.db
 #Data area:
 data/
 
+# Internal
+todo_list.md
+LEARNINGS.md
+DESIGN_SPECS.md
+
 # Logs
 *.log
 
