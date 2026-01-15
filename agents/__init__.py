@@ -4,6 +4,6 @@ prompts and models already inserted, ready to be used in the
 project
 """
 
-from .agents import financial_agent
+from .agent import financial_agent
 
 print ("agents module loaded...")

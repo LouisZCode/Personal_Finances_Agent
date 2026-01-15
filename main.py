@@ -3,6 +3,7 @@ Personal Finances Agent
 Main entry point for the application
 """
 
+# python main.py
 
 from UI import demo
 

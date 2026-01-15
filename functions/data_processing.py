@@ -1,5 +1,5 @@
 """
-Here you find all the functions related toprocess and prepare the
+Here you find all the functions related to process and prepare the
 data for ingestion or read for an LLM or Human
 """
 
